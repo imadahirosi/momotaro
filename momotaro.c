@@ -7,6 +7,15 @@ typedef struct {
 } an;
 
 void was_lived(){
+  puts("lived!!!¥n");
+}
+
+int when(an *person, int status){
+  if(person->go_to == status){
+    puts("It's true!¥n");
+    return 1;
+  }
+  return 0;
 }
 
 int main(){
@@ -15,6 +24,6 @@ int main(){
   was_lived();
   old_man.go_to = FIREWOOD_COLLECTING;
   old_woman.go_to = WASHING;
+  when(&old_woman, WASHING);
   return 0;
 }
-
