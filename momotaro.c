@@ -10,7 +10,7 @@ void was_lived(){
   puts("lived!!!¥n");
 }
 
-int when(an *person, int status){
+int when(an *person, enum Status status){
   if(person->go_to == status){
     puts("It's true!¥n");
     return 1;
