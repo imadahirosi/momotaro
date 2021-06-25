@@ -2,7 +2,7 @@
  * MOMOTARO
  * It is a famous old tale of Japan.
  *
- * Author: imadahirosi
+ * Author: imadahirosi, taichi watanabe
  *
  * RULE
  * - "main()" function must be readable English.
