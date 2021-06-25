@@ -26,6 +26,13 @@ void was_lived(){
   puts("lived!!!");
 }
 
+char* was_named(char* name){
+  char msg[100] = "named ";
+  strcat(msg, name);
+  puts(msg);
+  return name;
+}
+
 int when(an *person, enum Status status){
   if(person->go_to == status){
     puts("It's true!");
@@ -34,18 +41,13 @@ int when(an *person, enum Status status){
   return 0;
 }
 
-char* flow(char* where){
-    if(strcmp(where, "kawa")) return "momo";
-    return "ochiba";
+a came_out_from(char* fruit){
+  return fruit;
 }
 
-an cut(char* fruit){
-    an person;
-    if(strcmp(fruit, "momo")){
-        person.go_to = HOME;
-        puts("momotaro came out!\n");
-    }
-    return person;
+char* flows_through(char* where){
+  if(strcmp(where, "the river")) return "peach";
+  return "fallen leaves";
 }
 
 int main(){
@@ -55,8 +57,9 @@ int main(){
   old_man.go_to = FIREWOOD_COLLECTING;
   old_woman.go_to = WASHING;
   when(&old_woman, WASHING);
-  a momo = flow("kawa");
+  a peach = flows_through("the river");
   old_woman.go_to = HOME;
-  an momotaro = cut(momo);
+  a baby = came_out_from(peach);
+  baby = was_named("momotaro");
   return 0;
 }
