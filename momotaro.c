@@ -1,3 +1,15 @@
+/*
+ * MOMOTARO
+ * It is a famous old tale of Japan.
+ *
+ * Author: imadahirosi
+ *
+ * RULE
+ * - "main()" function must be readable English.
+ * - This program must be executable.
+ * - Try not to rely on comments as much as possible.
+ */
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
@@ -11,12 +23,12 @@ typedef struct {
 typedef char* a;
 
 void was_lived(){
-  puts("lived!!!¥n");
+  puts("lived!!!");
 }
 
 int when(an *person, enum Status status){
   if(person->go_to == status){
-    puts("It's true!¥n");
+    puts("It's true!");
     return 1;
   }
   return 0;
